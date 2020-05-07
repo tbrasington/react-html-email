@@ -25,7 +25,10 @@ export default function Span(props) {
 Span.propTypes = {
   fontFamily: PropTypes.string,
   fontSize: PropTypes.number,
-  fontWeight: PropTypes.string,
+  fontWeight: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
   lineHeight: PropTypes.number,
   color: PropTypes.string,
   style: EmailPropTypes.style,

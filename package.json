@@ -23,26 +23,26 @@
   "main": "lib/index.js",
   "repository": "chromakode/react-html-email",
   "devDependencies": {
-    "babel-cli": "~6.26.0",
-    "babel-eslint": "~8.0.0",
-    "babel-jest": "^21.0.2",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-jest": "^26.0.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
     "cheerio": "~1.0.0-rc.2",
     "eslint": "~4.7.2",
     "eslint-config-airbnb": "~15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
-    "jest": "^21.1.0",
+    "jest": "^26.0.1",
     "node-fetch": "~1.7.3",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
