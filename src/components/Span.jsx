@@ -12,7 +12,7 @@ export default function Span(props) {
         fontFamily: props.fontFamily,
         fontSize: props.fontSize,
         fontWeight: props.fontWeight,
-        lineHeight: `${lineHeight}px`,
+        lineHeight: `${lineHeight}`,
         color: props.color,
         ...props.style,
       }}
