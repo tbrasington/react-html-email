@@ -1,15 +1,12 @@
 import React from 'react'
 import { Box, Email, Image, Item, Span, A, Row, Col } from '../src/index'
 
-const css = `
-@media only screen and (max-device-width: 480px) {
-  font-size: 20px !important;
-}`.trim()
+const css = `@media only screen and (max-device-width: 480px) {font-size: 20px !important;}`.trim()
 
 const sourceURL = 'https://raw.githubusercontent.com/chromakode/react-html-email/master/examples/kitchenSink.js'
 
 const email = (
-  <Email title="Test Email" headCSS={css}>
+  <Email title="Test Email" headCSS={css} externalLinkStyles={["https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"]}>
     <Item>
       <Span fontSize={15}>Hello, world!</Span>
     </Item>

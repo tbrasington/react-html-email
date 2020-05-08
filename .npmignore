@@ -7,3 +7,5 @@ coverage/
 .eslintignore
 .eslintrc
 .travis.yml
+.cache
+dist

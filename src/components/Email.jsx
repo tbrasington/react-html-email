@@ -13,6 +13,7 @@ export default function Email(props) {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{props.title}</title>
+        {props.externalLinkStyles && props.externalLinkStyles.map((item,key)=>{return <link  key={key} rel="stylesheet" href={item} />})}
         {props.headCSS && <style type="text/css">{props.headCSS}</style>}
       </head>
       <body
@@ -49,6 +50,7 @@ Email.propTypes = {
   align: PropTypes.oneOf(['left', 'center', 'right']),
   valign: PropTypes.oneOf(['top', 'middle', 'bottom']),
   bodyStyle: EmailPropTypes.style,
+  externalLinkStyles : PropTypes.array,
   children: PropTypes.node,
 }
 
@@ -63,5 +65,6 @@ Email.defaultProps = {
   style: undefined,
   headCSS: undefined,
   bodyStyle: undefined,
+  externalLinkStyles : undefined,
   children: undefined,
 }

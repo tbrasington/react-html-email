@@ -13,6 +13,7 @@
     "email": "c@chromakode.com"
   },
   "scripts": {
+    "kitchenSink": "parcel examples/index.html",
     "lint": "eslint --ext .jsx --ext .js .",
     "test": "jest",
     "test:cov": "jest --coverage",
@@ -25,10 +26,10 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-jest": "^26.0.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "cheerio": "~1.0.0-rc.2",
     "eslint": "~4.7.2",
     "eslint-config-airbnb": "~15.1.0",
@@ -37,6 +38,7 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^26.0.1",
     "node-fetch": "~1.7.3",
+    "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
