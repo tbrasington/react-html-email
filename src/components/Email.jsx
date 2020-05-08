@@ -26,7 +26,7 @@ export default function Email(props) {
           ...props.bodyStyle,
         }}
       >
-        <Box width="100%" height="100%" bgcolor={props.bgcolor} >
+        <Box width="100%" height="100%" bgcolor={props.bgcolor} id="bodyTable">
           <Item align={props.align} valign={props.valign}>
             <Box width={props.width} align="center" cellPadding={props.cellPadding} cellSpacing={props.cellSpacing} style={props.style}  className={props.className}>
               {props.children}
