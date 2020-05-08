@@ -26,9 +26,9 @@ export default function Email(props) {
           ...props.bodyStyle,
         }}
       >
-        <Box width="100%" height="100%" bgcolor={props.bgcolor}  className={props.className}>
+        <Box width="100%" height="100%" bgcolor={props.bgcolor} >
           <Item align={props.align} valign={props.valign}>
-            <Box width={props.width} align="center" cellPadding={props.cellPadding} cellSpacing={props.cellSpacing} style={props.style}>
+            <Box width={props.width} align="center" cellPadding={props.cellPadding} cellSpacing={props.cellSpacing} style={props.style}  className={props.className}>
               {props.children}
             </Box>
           </Item>
