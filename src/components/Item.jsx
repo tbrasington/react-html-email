@@ -13,6 +13,7 @@ export default function Item(props) {
         valign={props.valign}
         bgcolor={props.bgcolor}
         style={props.style}
+        {...props}
       >
         {props.children}
       </td>

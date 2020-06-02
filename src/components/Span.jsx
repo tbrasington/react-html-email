@@ -16,6 +16,7 @@ export default function Span(props) {
         color: props.color,
         ...props.style,
       }}
+      {...props}
     >
       {props.children}
     </span>
