@@ -14,6 +14,7 @@ export default function Col(props) {
       colSpan={props.colSpan}
       style={props.style}
       width={props.width}
+      {...props}
     >
       {props.children}
     </td>
