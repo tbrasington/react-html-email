@@ -12,7 +12,7 @@ export default function Row(props) {
       valign={props.valign}
       bgcolor={props.bgcolor}
       style={props.style}
-      {...props}
+    
     >
       {props.children}
     </tr>
