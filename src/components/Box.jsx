@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import EmailPropTypes from '../PropTypes'
 
-export default function Box({ children, ...props }) {
+export default function Box({ children, id, className, tbodyID, tbodyClassName, ...props }) {
   return (
-    <table {...props}>
-      <tbody>
+    <table id={id} className={className} {...props}>
+      <tbody id={tbodyID} className={tbodyClassName} >
         {children}
       </tbody>
     </table>
@@ -23,6 +23,10 @@ Box.propTypes = {
   valign: PropTypes.oneOf(['top', 'middle', 'bottom']),
   style: EmailPropTypes.style,
   children: PropTypes.node,
+  id: PropTypes.string,
+  className: PropTypes.string,
+  tbodyID: PropTypes.string,
+  tbodyClassName: PropTypes.string,
 }
 
 Box.defaultProps = {
@@ -36,4 +40,8 @@ Box.defaultProps = {
   height: undefined,
   style: undefined,
   children: undefined,
+  id: undefined,
+  className: undefined,
+  tbodyID: undefined,
+  tbodyClassName: undefined,
 }

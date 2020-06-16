@@ -7,6 +7,7 @@ export default function Col(props) {
   return (
     <td
       {...includeDataProps(props)}
+      id={props.id}
       className={props.className}
       align={props.align}
       valign={props.valign}
@@ -21,6 +22,7 @@ export default function Col(props) {
 }
 
 Col.propTypes = {
+  id: PropTypes.string,
   className: PropTypes.string,
   bgcolor: PropTypes.string,
   colSpan: PropTypes.number,
@@ -34,6 +36,7 @@ Col.propTypes = {
 Col.defaultProps = {
   colSpan: null,
   children: null,
+  id: null,
   className: null,
   bgcolor: null,
   align: 'center',

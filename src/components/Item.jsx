@@ -8,12 +8,12 @@ export default function Item(props) {
     <tr>
       <td
         {...includeDataProps(props)}
+        id={props.id}
         className={props.className}
         align={props.align}
         valign={props.valign}
         bgcolor={props.bgcolor}
         style={props.style}
-        {...props}
       >
         {props.children}
       </td>
@@ -22,6 +22,7 @@ export default function Item(props) {
 }
 
 Item.propTypes = {
+  id : PropTypes.string,
   className: PropTypes.string,
   bgcolor: PropTypes.string,
   align: PropTypes.oneOf(['left', 'center', 'right']),
@@ -31,6 +32,7 @@ Item.propTypes = {
 }
 
 Item.defaultProps = {
+  id : undefined,
   className: undefined,
   bgcolor: undefined,
   align: undefined,

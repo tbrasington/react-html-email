@@ -7,6 +7,7 @@ export default function Row(props) {
   return (
     <tr
       {...includeDataProps(props)}
+      id={props.id}
       className={props.className}
       align={props.align}
       valign={props.valign}
@@ -20,6 +21,7 @@ export default function Row(props) {
 }
 
 Row.propTypes = {
+  id: PropTypes.string,
   className: PropTypes.string,
   bgcolor: PropTypes.string,
   align: PropTypes.oneOf(['left', 'center', 'right']),
@@ -30,6 +32,7 @@ Row.propTypes = {
 
 Row.defaultProps = {
   children: null,
+  id: null,
   className: null,
   bgcolor: null,
   align: 'center',

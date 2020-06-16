@@ -7,6 +7,8 @@ export default function A(props) {
   return (
     <a
       {...includeDataProps(props)}
+      className={props.className}
+      id={props.id}
       download={props.download}
       href={props.href}
       target="_blank"
@@ -29,7 +31,9 @@ A.propTypes = {
   textDecoration: PropTypes.string,
   style: EmailPropTypes.style,
   children: PropTypes.node,
-}
+  id : PropTypes.string,
+  className : PropTypes.string,
+},
 
 A.defaultProps = {
   textDecoration: 'underline',
@@ -38,4 +42,6 @@ A.defaultProps = {
   color: undefined,
   style: undefined,
   children: undefined,
+  id : undefined,
+  className: undefined,
 }

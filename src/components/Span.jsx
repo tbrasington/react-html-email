@@ -8,6 +8,8 @@ export default function Span(props) {
   return (
     <span
       {...includeDataProps(props)}
+      className={props.className}
+      id={props.id}
       style={{
         fontFamily: props.fontFamily,
         fontSize: props.fontSize,
@@ -33,6 +35,8 @@ Span.propTypes = {
   color: PropTypes.string,
   style: EmailPropTypes.style,
   children: PropTypes.node,
+  id : PropTypes.string,
+  className : PropTypes.string,
 }
 
 Span.defaultProps = {
@@ -43,4 +47,6 @@ Span.defaultProps = {
   color: '#000',
   style: undefined,
   children: undefined,
+  id : undefined,
+  className: undefined,
 }
