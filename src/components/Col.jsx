@@ -15,6 +15,7 @@ export default function Col(props) {
       colSpan={props.colSpan}
       style={props.style}
       width={props.width}
+      height={props.height}
     >
       {props.children}
     </td>
@@ -30,6 +31,7 @@ Col.propTypes = {
   valign: PropTypes.oneOf(['top', 'middle', 'bottom']),
   style: EmailPropTypes.style,
   width: PropTypes.string,
+  height: PropTypes.string,
   children: PropTypes.node,
 }
 
@@ -43,4 +45,5 @@ Col.defaultProps = {
   valign: 'top',
   style: null,
   width: null,
+  height: null,
 }
